@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad JavaScript</title>
+    <script src="script.js"></script>
+</head>
+<body>
+    <h1>Demostracion JavaScript</h1>
+    <p id="Parrafo">Este texto puede cambiar con JavaScript Interno</p>
+    <!-- Botón para JavaScript Interno -->
+    <button onclick="mensajeInterno()">Activar JS Interno</button>
+    <!-- Botón para JavaScript Externo -->
+    <button onclick="mensajeExterno()">Activar JS Externo</button>
+    <!-- Botón para JavaScript Inline -->
+    <button onclick="alert('Este es un mensaje desde JavaScript Inline')">Activar JS Inline</button>
+    <!-- Script Interno -->
+    <script>
+        function mensajeInterno(){
+            document.getElementById("Parrafo").innerText = "Texto cambiado por JavaScript Interno.";
+        }
+    </script>
+</body>
+</html>
